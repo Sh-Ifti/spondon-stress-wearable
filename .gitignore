@@ -1,0 +1,6 @@
+# Participant data must never be committed
+data/*.csv
+data/*.txt
+*.pdf
+.ipynb_checkpoints/
+__pycache__/

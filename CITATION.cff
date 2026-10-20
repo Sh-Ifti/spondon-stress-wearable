@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "Spondon: Stress detection analysis code"
+authors:
+  - family-names: Ifti
+    given-names: Shahariar
+repository-code: "https://github.com/Sh-Ifti/spondon-stress-wearable"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Spondon: A Low-Cost, Multi-Sensor Wearable for Understanding Stress in Resource-Constrained Countries"
+  authors:
+    - family-names: Ifti
+      given-names: Shahariar
+    - family-names: Rony
+      given-names: R. J.
+    - family-names: Chakraborty
+      given-names: S.
+    - family-names: Mahbub
+      given-names: A.
+    - family-names: Ahmed
+      given-names: N.
+  collection-title: "ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS '26)"
+  year: 2026
+  doi: "10.1145/3811242.3819996"
