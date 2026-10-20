@@ -13,13 +13,15 @@ preferred-citation:
     - family-names: Ifti
       given-names: Shahariar
     - family-names: Rony
-      given-names: R. J.
+      given-names: Rahat Jahangir
     - family-names: Chakraborty
-      given-names: S.
+      given-names: Shuvashish
     - family-names: Mahbub
-      given-names: A.
+      given-names: Asif
     - family-names: Ahmed
-      given-names: N.
-  collection-title: "ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS '26)"
+      given-names: Nova
+  collection-title: "Proceedings of the 2026 ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS '26)"
+  start: 8
+  end: 14
   year: 2026
   doi: "10.1145/3811242.3819996"

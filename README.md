@@ -2,7 +2,7 @@
 
 Analysis code for **Spondon**, a low-cost multi-sensor wearable built from locally available components to study stress in resource-constrained countries. Using leave-one-subject-out (LOSO) evaluation, a Random Forest on baseline-normalized signals detects acute stress in **unseen participants with 75.0% accuracy**, up from 47.9% on raw signals.
 
-> **Shahariar Ifti**, R. J. Rony, S. Chakraborty, A. Mahbub, N. Ahmed. *Spondon: A Low-Cost, Multi-Sensor Wearable for Understanding Stress in Resource-Constrained Countries.* ACM COMPASS 2026 (Poster). [doi:10.1145/3811242.3819996](https://doi.org/10.1145/3811242.3819996)
+> **Shahariar Ifti**, Rahat Jahangir Rony, Shuvashish Chakraborty, Asif Mahbub, Nova Ahmed. *Spondon: A Low-Cost, Multi-Sensor Wearable for Understanding Stress in Resource-Constrained Countries.* In Proceedings of ACM COMPASS 2026 (Short Paper), pp. 8–14. [doi:10.1145/3811242.3819996](https://doi.org/10.1145/3811242.3819996) (open access)
 
 Design Inclusion and Access Lab (DIAL), North South University, Bangladesh
 
@@ -10,20 +10,21 @@ Design Inclusion and Access Lab (DIAL), North South University, Bangladesh
 *Population averages (shaded: 95% CI) across Baseline, Stroop Test and Recovery (N = 15).*
 
 ## The device
-An ESP32-based wearable with three physiological sensors:
+An ESP32-based wearable built from off-the-shelf, locally available components for about **US$46**, compared with US$300–1,700 for commercial stress-monitoring devices. Data streams over the ESP32's Wi-Fi to a custom Android app, which logs it as CSV.
 
-| Sensor | Signal |
+| Component | Signal |
 |---|---|
-| MAX30102 | Photoplethysmography (PPG): heart rate and heart rate variability (RMSSD) |
+| MAX30102 | Photoplethysmography (PPG) at the fingertip: heart rate and heart rate variability (RMSSD) |
 | GSR sensor | Galvanic skin response (skin conductance, µS) |
-| Temperature sensor | Peripheral body temperature (°C) |
+| GY-906 infrared sensor | Peripheral body temperature (°C) |
+| ADXL335 accelerometer | Body movement, for noise filtering |
 
 ## Study protocol
-15 participants wore the device through three phases:
+15 participants aged 18–30 wore the device through three 5-minute phases (study approved by the North South University IRB, #2025/OR-NSU/IRB/0515):
 
 1. **Baseline** (5 min): seated rest
 2. **Stroop Test** (5 min): color-word interference task to induce acute stress
-3. **Recovery**: rest after the task
+3. **Recovery** (5 min): rest after the task
 
 ## Analysis pipeline
 The full pipeline is in [`notebooks/spondon_stress_analysis.ipynb`](notebooks/spondon_stress_analysis.ipynb):
@@ -100,8 +101,9 @@ The participant data is **not** included, to protect participant privacy. Partic
 ```bibtex
 @inproceedings{ifti2026spondon,
   title     = {Spondon: A Low-Cost, Multi-Sensor Wearable for Understanding Stress in Resource-Constrained Countries},
-  author    = {Ifti, Shahariar and Rony, R. J. and Chakraborty, S. and Mahbub, A. and Ahmed, N.},
-  booktitle = {ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS '26), Posters},
+  author    = {Ifti, Shahariar and Rony, Rahat Jahangir and Chakraborty, Shuvashish and Mahbub, Asif and Ahmed, Nova},
+  booktitle = {Proceedings of the 2026 ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS '26)},
+  pages     = {8--14},
   year      = {2026},
   doi       = {10.1145/3811242.3819996}
 }
